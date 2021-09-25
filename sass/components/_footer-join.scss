@@ -1,24 +1,24 @@
-.join {
-  &__text {
-    color: var(--third-text-color);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
+.join__text {
+  color: var(--third-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .join-table {
   display: flex;
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
-  &__icon {
-    fill: var(--third-text-color);
-  }
+}
+
+.join-table__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-table__icon {
+  fill: var(--third-text-color);
 }
 
 .join-table__link {

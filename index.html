@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -549,9 +549,9 @@
               required
             />
 
-            <button class="subscription-button" type="submit">
-              <span class="subscription-button__text">Подписаться</span>
-              <svg class="subscription-button__icon" width="24" height="24">
+            <button class="button button--subscription" type="submit">
+              <span class="button__text">Подписаться</span>
+              <svg class="button__icon" width="24" height="24">
                 <use href="./image/sprite.svg#icon-footer-icon-send"></use>
               </svg>
             </button>
@@ -563,10 +563,11 @@
     <!-- backdrop -->
 
     <div class="backdrop is-hidden" data-modal>
+      <!-- modal-form -->
+
       <div class="modal">
         <form class="modal-form" action="#" method="POST">
           <p class="modal-form__title">Оставьте свои данные, мы вам перезвоним</p>
-
           <div class="modal-form__field">
             <label for="text" class="modal-form__label">Имя</label>
             <span class="modal-form__wrapper">
@@ -614,7 +615,7 @@
             </span>
           </div>
 
-          <div class="modal-form__textarea">
+          <div class="modal-form__field">
             <label for="comment" class="modal-form__label">Комментарий</label>
             <textarea
               class="modal-form__input modal-field__textarea"
@@ -624,7 +625,7 @@
             ></textarea>
           </div>
 
-          <!-- checkbox -->
+          <!-- modal-checkbox -->
 
           <div class="modal-form-checkbox">
             <input
@@ -645,8 +646,12 @@
             >
           </div>
 
+          <!-- modal-button -->
+
           <button class="button button--modal" type="submit">Отправить</button>
         </form>
+
+        <!-- modal-button-x -->
 
         <button type="button" title="Close" class="button-x" data-modal-close>
           <svg class="icon-button-x" width="11" height="11">
